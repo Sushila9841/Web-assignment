@@ -89,7 +89,41 @@ header{
 .title h3{
 	color: crimson;
 	font-size: 40px;
-
+}
+/*Media Query*/
+/*Media Query of index.html for hamburger icon*/
+@media screen and (max-width: 600px) {
+  .navbar ul li:not(:first-child) {display: none;}
+  .navbar .menu2 {
+    float: right;
+    display: block;
+    right: 0;
+    top: 0;
+    margin-right: 10px;
+    margin-top: 10px;
+    position: absolute;
+  }
+}
+/*media query of index.html*/
+@media screen and (max-width: 600px) {
+  .navbar.responsive ul li {position: relative;}
+  .navbar.responsive .menu2 {
+    position: absolute;
+    margin-right: 10px;
+    margin-top: 10px;
+    
+  }
+  .navbar.responsive ul li {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .menu2 {
+  	display: block;
+  }
+}
+ .hamberger-icon{
+	display: none;
 }
 
 /*.contact.html css start here*/
@@ -138,8 +172,8 @@ header{
 .container0 .contactinfo .box .text h3{ 
     font-weight: 500;
     color: crimson; 
+}
 
- }
  /*Contact form was created*/
 .contactform{
 	width:40%;
@@ -207,41 +241,7 @@ header{
 	}
 	
 }
-/*Media Query*/
-/*Media Query of index.html*/
-@media screen and (max-width: 600px) {
-  .navbar ul li:not(:first-child) {display: none;}
-  .navbar .menu2 {
-    float: right;
-    display: block;
-    right: 0;
-    top: 0;
-    margin-right: 10px;
-    margin-top: 10px;
-    position: absolute;
-  }
-  
-}
-@media screen and (max-width: 600px) {
-  .navbar.responsive ul li {position: relative;}
-  .navbar.responsive .menu2 {
-    position: absolute;
-    margin-right: 10px;
-    margin-top: 10px;
-    
-  }
-  .navbar.responsive ul li {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .menu2 {
-  	display: block;
-  }
-}
- .hamberger-icon{
-	display: none;
-}
+
 /*CV.html css starts here*/
 *{
 	margin: 0px;
@@ -286,6 +286,7 @@ table, th, td{
   height: 100px;
   border-radius: 5px;
 }
+/*CV.html media query*/
 @media screen and (max-width: 600px) {
 	.cv_container{
 		flex-direction: column;
@@ -324,7 +325,12 @@ table, th, td{
 .backg1{
 	background-image: url("images/namo-buddha.jpg");
 	background-size: cover;
-	height: 100vh;
+	height: 90vh;
+	width: 100;
+	position: relative;
+	background-repeat:no-repeat;
+    background-position: center; 
+
 }
 .placeholder img{
 	margin-left: 8% ;
@@ -341,3 +347,4 @@ table, th, td{
 		padding-top: 120px;
 	}
 }
+/*zoom out garnu afai

@@ -13,12 +13,12 @@
 					<!-- logo is inserted -->
 					<div class="logo">
 						<img src="images/me.jpg" alt="logo1">
-						<h3><a href="homepage.html">Sushila Timalsina</a></h3>
+						<h3><a href="index.html">Sushila Timalsina</a></h3>
 					</div>
 					<!-- menu bar icons -->
 					<ul class="menu">
 						<li></li>
-						<li><a href="homepage.html">Home</a></li>	
+						<li><a href="index.html">Home</a></li>	
 						<li><a href="protofolio.html">Portfolio</a></li>
 						<li><a href="contact.html">Contact</a></li>
 						<li><a href="CV.html">CV</a></li>
@@ -39,6 +39,15 @@
 			<h3>Welcome to the webpage</h3>
 		</div>
 </header>
-<script  src="script.js"></script>
+<script>
+	function responsiveMenu(){
+	var x = document.getElementById("navbar");
+	if (x.className === "navbar"){
+	  x.className += " responsive";
+	} else {
+	  x.className = "navbar";
+	}
+}
+</script>
 </body>
 </html>
