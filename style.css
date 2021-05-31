@@ -370,4 +370,36 @@ table, th, td{
 		padding-top: 120px;
 	}
 }
-/*zoom out garnu afai
+/*sitereport starts here*/
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+.Reports{
+	background-color: pink;
+	width: 90%;
+	padding: 25px;
+	margin-top: 10%;
+	left: 5%;
+	position: absolute;
+    height: 1000px;
+    margin-right:9%;
+    font-size: 18px;
+    /*position: relative; */
+}
+.v_body{
+	background-image: linear-gradient(#fff,pink,deeppink,blue,purple,lightgreen,darkgreen,red);
+	background-position: center;
+    position: absolute; 
+    height: 350vh;
+    width: 100%;
+    background-size: cover;
+    overflow:hidden;
+}
+/*.context{
+	text-align: center;
+	text-overflow: hidden;
+	tex
+}*/
