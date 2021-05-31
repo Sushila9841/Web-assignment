@@ -348,7 +348,7 @@ table, th, td{
 .backg1{
 	background-image: url("images/namo-buddha.jpg");
 	background-size: cover;
-	height: 90vh;
+	height: 100vh;
 	width: 100;
 	position: relative;
 	background-repeat:no-repeat;
