@@ -89,6 +89,29 @@ header{
 .title h3{
 	color: crimson;
 	font-size: 40px;
+	animation: blink 10s infinite;
+	-webkit-animation: blink 30s infinite;
+}
+@-webkit-keyframes blink{
+	0%{
+		color: crimson;
+	}
+	30%{
+		color: red;
+	}
+	50%{
+		color: silver;
+	}
+	70%{
+		color: green;
+	}
+	80%{
+		color: blue;
+	}
+	80%{
+		color: gold;
+	}
+
 }
 /*Media Query*/
 /*Media Query of index.html for hamburger icon*/
