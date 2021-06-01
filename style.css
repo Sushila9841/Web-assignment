@@ -390,7 +390,7 @@ table, th, td{
     /*position: relative; */
 }
 .v_body{
-	background-image: linear-gradient(#fff,pink,deeppink,blue,purple,lightgreen,darkgreen,red);
+	background-image: radial-gradient(#fff,pink,deeppink,blue,purple,lightgreen,darkgreen,red);
 	background-position: center;
     position: absolute; 
     height: 350vh;
