@@ -89,8 +89,9 @@ header{
 .title h3{
 	color: crimson;
 	font-size: 40px;
-	animation: blink 10s infinite;
+	animation: blink 50s infinite;
 	-webkit-animation: blink 30s infinite;
+	transform: left;
 }
 @-webkit-keyframes blink{
 	0%{
@@ -111,6 +112,12 @@ header{
 	80%{
 		color: gold;
 	}
+	/*from{
+		transform: rotateZ(0deg);
+	}
+	to {
+		transform: rotateZ(360deg);
+	}*/
 
 }
 /*Media Query*/
@@ -384,22 +391,21 @@ table, th, td{
 	margin-top: 10%;
 	left: 5%;
 	position: absolute;
-    height: 1000px;
+    height: 3000px;
     margin-right:9%;
     font-size: 18px;
     /*position: relative; */
 }
 .v_body{
-	background-image: radial-gradient(#fff,pink,deeppink,blue,purple,lightgreen,darkgreen,red);
+	background-image: radial-gradient(lightgreen,darkgreen,orange,red,purple,deeppink,blue,#fff,pink);
 	background-position: center;
     position: absolute; 
-    height: 350vh;
+    height: 700vh;
     width: 100%;
     background-size: cover;
     overflow:hidden;
 }
-/*.context{
-	text-align: center;
-	text-overflow: hidden;
-	tex
-}*/
+.shot img{
+	width: 45%;
+	height: 300px;
+}
