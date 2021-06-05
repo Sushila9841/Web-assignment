@@ -164,6 +164,8 @@ header{
 .Contact{
 	background-image: linear-gradient(#fff,pink);
 	background-size: cover;
+	overflow: hidden;
+	height: ;
 }
 .contact. content h2{
 	font-size: 36px;
@@ -176,7 +178,7 @@ header{
 	justify-content: center;
 	align-items: center;
 	margin-top: 3px;
-	padding-top: 90px;
+	padding-top: 130px;
 }
 /*Some info about me  was provided*/
 .container0 .contactinfo{
@@ -360,6 +362,7 @@ table, th, td{
 	position: relative;
 	background-repeat:no-repeat;
     background-position: center; 
+    overflow : hidden;
 
 }
 .placeholder img{
