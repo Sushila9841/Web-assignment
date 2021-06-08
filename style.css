@@ -1,4 +1,4 @@
-/*index.html starts here*/
+index.html starts here*/
 *{
 	margin: 0;
 	padding: 0;
@@ -368,6 +368,7 @@ table, th, td{
 .placeholder img{
 	margin-left: 8% ;
 }
+/*media query of portfolio*/
 @media screen and (max-width:600px){
 	.backg1{
 		background-size: cover;
@@ -380,13 +381,14 @@ table, th, td{
 		padding-top: 120px;
 	}
 }
-/*sitereport starts here*/
+/*Sitereport starts here*/
 *{
 	margin: 0px;
 	padding: 0px;
 	box-sizing: border-box;
 	text-decoration: none;
 }
+/*information of report has been shown in creative way*/
 .Reports{
 	background-color: pink;
 	width: 90%;
@@ -399,6 +401,7 @@ table, th, td{
     font-size: 18px;
     /*position: relative; */
 }
+/*It holds background of report*/
 .v_body{
 	background-image: radial-gradient(lightgreen,darkgreen,orange,red,purple,deeppink,blue,#fff,pink);
 	background-position: center;
@@ -408,7 +411,9 @@ table, th, td{
     background-size: cover;
     overflow:hidden;
 }
+/*some images are inserted related with content*/
 .shot img{
 	width: 45%;
 	height: 300px;
 }
+/*Report page css ends here
