@@ -1,4 +1,4 @@
-index.html starts here*/
+/*index.html starts here*/
 *{
 	margin: 0;
 	padding: 0;
@@ -164,8 +164,8 @@ header{
 .Contact{
 	background-image: linear-gradient(#fff,pink);
 	background-size: cover;
+	background-position: center;
 	overflow: hidden;
-	height: ;
 }
 .contact. content h2{
 	font-size: 36px;
