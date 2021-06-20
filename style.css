@@ -1,0 +1,445 @@
+/*index.html starts here*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+header{
+	background:url("images/namo-buddha.jpg");
+	height:100vh;
+	background-size:cover;
+	background-position:center;
+}
+ .max-width{
+	max-width: 1500px;
+	padding: 0 70px;
+	margin: 20px;
+}
+/*navbar styling starts...*/
+.navbar{
+	position: fixed;
+	width: 100%;
+	padding: -70px 0px;s
+}
+.navbar .menu li a{
+	color: #000;
+	font-size: 17px;
+	font-weight: 500;
+	margin-left: 30px;
+	transition: 0.3s ease;
+}
+.navbar .menu li a:hover{
+	background-color: crimson;
+	color: #fff;
+}
+.navbar .menu li{
+	list-style: none;
+	display: inline-block;
+}
+.navbar .logo a{
+	font-size: 20px;
+	color: #000;
+	font-weight: 600;
+}
+.logo img{ 
+		width: 30px;
+		border-radius: 15px;
+		float: left;
+		margin-right: 10px;
+	}
+.navbar .max-width{
+	display: flex;
+	align-items: center;
+    justify-content: space-between;
+}
+.menu2{
+    height: 35px;
+	width: 33px;
+	margin: 16px 4px 9px 16px;
+	display: none;
+}
+.menu2:active .aa,
+.menu2:focus  .aa{
+	visibility: visible;
+}
+.menu2 .aa{
+    height: 4px;
+	width: 100%;
+	background-color: crimson;
+	display: block;
+	border-radius: 3px;
+}
+#ss{
+	transform: translateY(-3px);
+}
+#cc{
+	transform: translateY(3px);
+}
+.title{ 
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+ .title h2{
+ 	color: #000;
+ 	font-size: 60px;
+}
+.title h3{
+	color: crimson;
+	font-size: 40px;
+	/*animation: fade-slide-down 2s 5s cubic-bezier(0,0.5,0.1) forwards;*/
+	/*-webkit-animation: fade-slide-down 30s infinite;*/
+	/*transform: left;*/
+/*	opacity: 0;*/
+    position: relative;
+}
+/*@keyframes fade-slide-down{*/
+	/*0%{
+		color: crimson;
+	
+	opacity:0;
+	transform: translateY(-4rem) ;
+    }*/
+
+	/*30%{
+		color: red;
+	}
+	50%{
+		color: silver;
+	}
+	70%{
+		color: green;
+	}
+	80%{
+		color: blue;
+	}
+	80%{
+		color: gold;
+	}*/
+	/*100%{
+		opacity: 1;
+		transform: none;
+	}*/
+	/*from{
+		transform: rotateZ(0deg);
+	}
+	to {
+		transform: rotateZ(360deg);
+	}*/
+
+}
+/*Media Query*/
+/*Media Query of index.html for hamburger icon*/
+@media screen and (max-width: 600px) {
+  .navbar ul li:not(:first-child) {display: none;}
+  .navbar .menu2 {
+    float: right;
+    display: block;
+    right: 0;
+    top: 0;
+    margin-right: 10px;
+    margin-top: 10px;
+    position: absolute;
+  }
+}
+/*media query of index.html*/
+@media screen and (max-width: 600px) {
+  .navbar.responsive ul li {position: relative;}
+  .navbar.responsive .menu2 {
+    position: absolute;
+    margin-right: 10px;
+    margin-top: 10px;
+    
+  }
+  .navbar.responsive ul li {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .menu2 {
+  	display: block;
+  }
+}
+ .hamberger-icon{
+	display: none;
+}
+
+/*.contact.html css start here*/
+*{ 
+	margin: 0;
+	padding: 0;
+}
+.Contact{
+	background-image: linear-gradient(#fff,pink);
+	background-size: cover;
+	background-position: center;
+	/*height:100%;*/
+	overflow: hidden;
+}
+.contact. content h2{
+	font-size: 36px;
+	font-weight: 500;
+	color:#fff;
+}
+.container0{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 3px;
+	padding-top: 130px;
+}
+/*Some info about me  was provided*/
+.container0 .contactinfo{
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+.container0 .contactinfo .box{
+	position: relative;
+	padding: 20px 0;
+	display: flex;
+	margin-top: 40px;
+	width: 50%;
+}
+.container0 .contactinfo .box .text{
+	display: flex;
+	margin-left: 15px;
+	font-size: 16px;
+	color: #000;
+	flex-direction: column;
+	font-weight: 300;
+}
+.container0 .contactinfo .box .text h3{ 
+    font-weight: 500;
+    color: crimson; 
+}
+
+ /*Contact form was created*/
+.contactform{
+	width:40%;
+	padding:50px;
+	background: #fff;
+}
+.contactform h2{
+	font-size: 30px;
+	color: #333;
+	font-weight: 500;
+}
+.contactform .inputbox{
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+}
+.contactform .inputbox input,
+.contactform .inputbox textarea{
+	width: 100%;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	border: none;
+	border-bottom: 2px solid #333;
+	outline: none;
+	resize: none;
+}
+.contactform .inputbox span{
+	position: absolute;
+	left: 0;
+	padding: 5px 0;
+	font-size: 16px;
+	margin: 10px 0;
+	pointer-events: none;
+	transition: 0.5s;
+	color: #666;
+}
+.contactform .inputbox input:focus ~ span,
+.contactform .inputbox input:valid ~ span
+.contactform .inputbox textarea:focus ~ span,
+.contactform .inputbox textarea:valid ~ span{
+	color:#e91e63;
+	font-size: 12px;
+	transform: translateY(-20px);
+}
+.contactform .inputbox input[type="submit"]{
+	width: 100px;
+	background: crimson;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	font-size: 10px;
+}
+/*media query of contact.html*/
+@media(max-width: 980px){
+    .container0{
+		flex-direction: column;
+	}
+	.contactform{
+		width: 90%;
+	}
+	.contactform .inputbox input[type="submit"]{
+		width:40px;
+	}
+	
+}
+
+/*CV.html css starts here*/
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.cv_container{
+	margin-top: 100px;
+	padding: 10px;
+	position: absolute;
+	width: 80%;
+	margin-right: 5%;
+	margin-left: 5%;
+	display: inline-flex;
+}
+.personal_info{
+	width:25%;
+	background-color:pink;
+	padding: 10px;
+}
+.details{
+	width: 70%;
+	background: white;
+	padding: 10px;
+}
+.cv_body{
+	background-image: url("images/namo-buddha.jpg");
+	background-repeat:no-repeat;
+    background-position: center; 
+    height: 1000px;
+    width: 100%;
+    background-size: cover;
+}
+table, th, td{
+	border:2px solid #000;
+	text-align: left;
+}
+.personal_info img{
+  width: 120px;
+  margin-top: 6%;
+  text-align: center;
+  margin-left: 10%;
+  height: 100px;
+  border-radius: 5px;
+}
+/*CV.html media query*/
+@media screen and (max-width: 600px) {
+	.cv_container{
+		flex-direction: column;
+		width: 100%;
+		margin-left: 0%;
+		margin-right: 0%;
+	}
+	.personal_info{
+		width: 100%;
+	}
+	.details{
+		width: 100%;
+	}
+}
+/*Protofolio*/
+ *{
+ 	margin: 0px
+ 	padding:0px;
+}
+.Port1{
+    width: 1000px;
+	float: center;
+    text-align: center;
+	padding-top: 80px;
+	flex-direction: column;
+}
+.Port1 h1{
+    height: 120px;
+    margin: 0 auto;
+    font-size: 25px;
+}
+.Port1 h1 span{
+	color: crimson;
+ 	font-size: 35px;
+}
+.backg1{
+	background-image: url("images/namo-buddha.jpg");
+	background-size: cover;
+	height: 100vh;
+	width: 100;
+	position: relative;
+	background-repeat:no-repeat;
+    background-position: center; 
+    overflow : hidden;
+
+}
+.placeholder img{
+	margin-left: 8% ;
+}
+/*media query of portfolio*/
+@media screen and (max-width:600px){
+	.backg1{
+		background-size: cover;
+	    height: 320vh;
+	    position:absolute;
+	}
+	.placeholder img{
+		display: flex;
+		padding-left: 280px;
+		padding-top: 120px;
+	}
+}
+/*Sitereport starts here*/
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+/*information of report has been shown in creative way*/
+.Reports{
+	background-color: pink;/*#666*/
+	width: 90%;
+	padding: 25px;
+	margin-top: 10%;
+	left: 5%;
+	position: absolute;
+    height: 6000px;
+    margin-right:9%;
+    font-size: 18px;
+    /*position: relative; */
+}
+/*It holds background of report*/
+.v_body{
+	background-image: linear-gradient(lightgreen,darkgreen,orange,red,purple,deeppink,blue,#fff,pink,gold,silver);
+	background-position: center;
+    position: absolute; 
+    height: 1000vh;
+    width: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+/*some images are inserted related with content*/
+.shot{
+	justify-content: space-around;
+	display: flex;
+}
+.shot img{
+	width: 45%;
+	height: 300px;
+}
+@media screen and (max-width:600px){
+	.Reports{
+	
+	width: 90%;
+	padding: 25px;
+	margin-top: 30%;
+	left: 5%;
+	position: relative;
+   
+   
+}
+/*Report page css ends here
