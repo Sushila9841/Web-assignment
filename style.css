@@ -1,4 +1,4 @@
-/*index.html starts here*/
+index.html starts here*/
 *{
 	margin: 0;
 	padding: 0;
@@ -24,7 +24,7 @@ header{
 }
 .navbar .menu li a{
 	color: #000;
-	font-size: 17px;
+	font-size: 18px;
 	font-weight: 500;
 	margin-left: 30px;
 	transition: 0.3s ease;
@@ -38,7 +38,7 @@ header{
 	display: inline-block;
 }
 .navbar .logo a{
-	font-size: 20px;
+	font-size: 22px;
 	color: #000;
 	font-weight: 600;
 }
@@ -89,47 +89,25 @@ header{
 .title h3{
 	color: crimson;
 	font-size: 40px;
-	/*animation: fade-slide-down 2s 5s cubic-bezier(0,0.5,0.1) forwards;*/
-	/*-webkit-animation: fade-slide-down 30s infinite;*/
-	/*transform: left;*/
-/*	opacity: 0;*/
-   /* position: relative;
-}*/
-/*@keyframes fade-slide-down{*/
-	/*0%{
-		color: crimson;
-	
-	opacity:0;
-	transform: translateY(-4rem) ;
-    }*/
-
-	/*30%{
-		color: red;
-	}
-	50%{
-		color: silver;
-	}
-	70%{
-		color: green;
-	}
-	80%{
-		color: blue;
-	}
-	80%{
-		color: gold;
-	}*/
-	/*100%{
-		opacity: 1;
-		transform: none;
-	}*/
-	/*from{
-		transform: rotateZ(0deg);
-	}
-	to {
-		transform: rotateZ(360deg);
-	}*/
-
+	-webkit-box-reflect: below linear-gradient(transparent,crimson);
+    animation: animate 5s linear infinite;
 }
+.title span{
+    font-size:20px;
+    color: silver;
+}
+@keyframes animate{
+	0%{
+		color: #ededca;
+		text-shadow:0 0 20px yellow;
+	}
+
+	100%{
+		color:#edd0ca;
+		text-shadow: 0 0 20px crimson;
+	}
+}
+
 /*Media Query*/
 /*Media Query of index.html for hamburger icon*/
 @media screen and (max-width: 600px) {
@@ -174,8 +152,12 @@ header{
 .content{
 	background-image: linear-gradient(#fff,pink);
 	background-size: cover;
-	background-position: center;
-	/*height:100%;*/
+	background-repeat: no-repeat;
+	background-position: center center;
+	object-position: center;
+	background-attachment:fixed;
+	/*width:100%;*/
+	/*position:absolute;*/
 	overflow: hidden;
 }
 .contact. content h2{
@@ -221,6 +203,7 @@ header{
 .contactform{
 	width:40%;
 	padding:50px;
+	padding-bottom:5px;
 	background: #fff;
 }
 .contactform h2{
@@ -262,6 +245,7 @@ header{
 	font-size: 12px;
 	transform: translateY(-20px);
 }
+/*form submit buttom can see here*/
 .contactform .inputbox input[type="submit"]{
 	width: 100px;
 	background: crimson;
@@ -271,6 +255,7 @@ header{
 	padding: 10px;
 	font-size: 10px;
 }
+/*Contactform ends here*/
 /*media query of contact.html*/
 @media(max-width: 1050px){
     .container0{
@@ -281,6 +266,9 @@ header{
 	}
 	.contactform .inputbox input[type="submit"]{
 		width:40px;
+	}
+	.content{
+		height:180vh;
 	}
 }
 	
@@ -349,14 +337,14 @@ table, th, td{
 }
 /*Protofolio*/
  *{
- 	margin: 0px
+ 	margin: 0px;
  	padding:0px;
 }
 .Port1{
     width: 1000px;
 	float: center;
     text-align: center;
-	padding-top: 80px;
+	padding-top: 60px;
 	flex-direction: column;
 }
 .Port1 h1{
@@ -379,20 +367,45 @@ table, th, td{
     overflow : hidden;
 
 }
-.placeholder img{
-	margin-left: 8% ;
+.grid-holder{
+	height: 50vh;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	grid-gap:50px;
+	align-items: center;
+	padding-top:25px;
+	padding-right:50px;
+	padding-left:100px;
+	grid-template-rows:250px;
+	margin-top: 30px;
+}
+.placeholder1{
+	box-shadow: 0 0 3px rgba(222, 227, 224); 
+	height: 400px;
+}
+.placeholder1 img{
+	width:100%;
+	display:block;
+	height: 50vh;
+	/*color:blue;*/
+
+}
+.ph-content{
+	padding:15px;
+	opacity:0.8; 
+	height:20vh;
+	text-align:center;
+	background: linear-gradient(rgba(153, 239, 242),rgba(69, 255, 150));
 }
 /*media query of portfolio*/
 @media screen and (max-width:600px){
 	.backg1{
-		background-size: cover;
+		background-size: center;
 	    height: 320vh;
 	    position:absolute;
 	}
-	.placeholder img{
-		display: flex;
-		padding-left: 280px;
-		padding-top: 120px;
+	.grid-holder{
+		grid-row-gap: 10px;
 	}
 }
 /*Sitereport starts here*/
@@ -417,10 +430,10 @@ table, th, td{
 }
 /*It holds background of report*/
 .v_body{
-	background-image: linear-gradient(lightgreen,darkgreen,orange,red,purple,deeppink,blue,#fff,pink,gold,silver);
+	background-image: linear-gradient(orange,red,purple,deeppink,blue,#fff,pink,gold,silver);
 	background-position: center;
     position: absolute; 
-    height: 1000vh;
+    height: 900vh;
     width: 100%;
     background-size: cover;
     overflow: hidden;
@@ -445,4 +458,4 @@ table, th, td{
    
    
 }
-/*Report page css ends here*/
+/*Report page css ends here
