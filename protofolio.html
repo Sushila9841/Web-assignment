@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-		<meta name="viewport" content="with=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 		<title>portfolio</title>
+		<meta charset="UFT-8">
 		<link rel="stylesheet" href="style.css"> 
 </head>
 <body>
@@ -38,12 +39,28 @@
 			    	<h1>Port<span>folio</span></h1>
 	    </div>
 	    <!-- placeholder image has been added -->
-					<div class="placeholder">
-						<img src="https://via.placeholder.com/250" alt="placeholder1">
-						<img src="https://via.placeholder.com/250" alt="placeholder2">
-						<img src="https://via.placeholder.com/250" alt="placeholder3">
+	    <div class="grid-holder">
+					<div class="placeholder1">
+							<img src="https://via.placeholder.com/250" alt="placeholder1">
+						<div class="ph-content">
+						Progress Report no.1		
+						</div>	
 					</div>
+					<div class="placeholder1">
+							<img src="https://via.placeholder.com/250" alt="placeholder1">
+						<div class="ph-content">
+						Progress Report no.2		
+						</div>	
+					</div>
+					<div class="placeholder1">
+							<img src="https://via.placeholder.com/250" alt="placeholder1">
+						<div class="ph-content">
+						Progress Report no.3		
+						</div>	
+					</div>					
+		</div>			
    </div>
+   <!-- Javascript for hamburger to hide the menubar and to work click function -->
 	<script>
 				function responsiveMenu(){
 		var x = document.getElementById("navbar");
