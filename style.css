@@ -1,10 +1,11 @@
-/*index.html starts here*/
+/*Homapage starts here*/
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	text-decoration: none;
 }
+/*Background image of homepage is added*/
 header{
 	background:url("images/namo-buddha.jpg");
 	height:100vh;
@@ -16,7 +17,7 @@ header{
 	padding: 0 70px;
 	margin: 20px;
 }
-/*navbar styling starts...*/
+/*menubar styling starts...*/
 .navbar{
 	position: fixed;
 	width: 100%;
@@ -24,11 +25,12 @@ header{
 }
 .navbar .menu li a{
 	color: #000;
-	font-size: 17px;
+	font-size: 18px;
 	font-weight: 500;
 	margin-left: 30px;
 	transition: 0.3s ease;
 }
+/*hover for menubar*/
 .navbar .menu li a:hover{
 	background-color: crimson;
 	color: #fff;
@@ -38,10 +40,11 @@ header{
 	display: inline-block;
 }
 .navbar .logo a{
-	font-size: 20px;
+	font-size: 22px;
 	color: #000;
 	font-weight: 600;
 }
+/*logo of the page is inserted here*/
 .logo img{ 
 		width: 30px;
 		border-radius: 15px;
@@ -53,6 +56,7 @@ header{
 	align-items: center;
     justify-content: space-between;
 }
+/*hamburger icon is made here*/
 .menu2{
     height: 35px;
 	width: 33px;
@@ -76,6 +80,7 @@ header{
 #cc{
 	transform: translateY(3px);
 }
+/*html page text is inserted  */
 .title{ 
 	position: absolute;
 	top: 50%;
@@ -86,41 +91,79 @@ header{
  	color: #000;
  	font-size: 60px;
 }
+.title h2:before{
+	content:'Hello!';
+	animation: ani 8s infinite;
+}
 .title h3{
 	color: crimson;
 	font-size: 40px;
-	animation: blink 50s infinite;
-	-webkit-animation: blink 30s infinite;
-	transform: left;
+	-webkit-box-reflect: below linear-gradient(transparent,crimson);
+    animation: animate 5s linear infinite;
 }
-@-webkit-keyframes blink{
+.title span{
+    font-size:20px;
+    color: silver;
+}
+/*1st Animation of text starts here*/
+@keyframes ani{
 	0%{
-		color: crimson;
+	 	font-size: 60px;
+		opacity:1;
 	}
-	30%{
-		color: red;
+	25%{
+	 	font-size: 57px;
+		opacity:0;
 	}
 	50%{
-		color: silver;
+	 	font-size: 60px;
+		opacity:1;
+		
 	}
-	70%{
-		color: green;
+	65%{
+	 	font-size: 57px;
+		opacity:0;
 	}
 	80%{
-		color: blue;
+	 	font-size: 60px;
+		opacity:1;
+		content:'Namaste!';
 	}
-	80%{
-		color: gold;
+	90%{
+	 	font-size: 57px;
+		opacity:0;
 	}
-	/*from{
-		transform: rotateZ(0deg);
+	100%{
+	 	font-size: 60px;
+		opacity:1;
+		content:'Hello!';
+		
 	}
-	to {
-		transform: rotateZ(360deg);
-	}*/
-
 }
-/*Media Query*/
+/*2nd animaion of text starts here*/
+@keyframes animate{
+	0%{
+		color: #e0df79;
+		text-shadow:0 0 20px yellow;
+	}
+	25%{
+		color: #78f576 ;
+		text-shadow:0 0 20px #1cf218;
+	}
+	50%{
+		color: #91f1f2;
+		text-shadow:0 0 20px #2de0e3;
+	}
+	75%{
+		color: #f2cb83;
+		text-shadow:0 0 20px #f7a919;
+	}
+	
+	100%{
+		color:#e0917b;
+		text-shadow: 0 0 20px crimson;
+	}
+}
 /*Media Query of index.html for hamburger icon*/
 @media screen and (max-width: 600px) {
   .navbar ul li:not(:first-child) {display: none;}
@@ -134,7 +177,7 @@ header{
     position: absolute;
   }
 }
-/*media query of index.html*/
+/*Media query of whole homepage start here*/
 @media screen and (max-width: 600px) {
   .navbar.responsive ul li {position: relative;}
   .navbar.responsive .menu2 {
@@ -155,19 +198,24 @@ header{
  .hamberger-icon{
 	display: none;
 }
+/*Css and media query of indexpage ends here*/
 
 /*.contact.html css start here*/
 *{ 
 	margin: 0;
 	padding: 0;
 }
-.Contact{
+/*background image*/
+.content{
 	background-image: linear-gradient(#fff,pink);
 	background-size: cover;
-	background-position: center;
+	background-repeat: no-repeat;
+	background-position: center center;
+	object-position: center;
+	background-attachment:fixed;
 	overflow: hidden;
 }
-.contact. content h2{
+.contact. content h3{
 	font-size: 36px;
 	font-weight: 500;
 	color:#fff;
@@ -180,7 +228,7 @@ header{
 	margin-top: 3px;
 	padding-top: 130px;
 }
-/*Some info about me  was provided*/
+/*Some contact info about me  was provided*/
 .container0 .contactinfo{
 	width: 50%;
 	display: flex;
@@ -205,11 +253,11 @@ header{
     font-weight: 500;
     color: crimson; 
 }
-
- /*Contact form was created*/
+/*Contact form was created*/
 .contactform{
 	width:40%;
 	padding:50px;
+	padding-bottom:5px;
 	background: #fff;
 }
 .contactform h2{
@@ -251,6 +299,7 @@ header{
 	font-size: 12px;
 	transform: translateY(-20px);
 }
+/*form submit buttom can see here*/
 .contactform .inputbox input[type="submit"]{
 	width: 100px;
 	background: crimson;
@@ -260,8 +309,9 @@ header{
 	padding: 10px;
 	font-size: 10px;
 }
+/*Contactform ends here*/
 /*media query of contact.html*/
-@media(max-width: 980px){
+@media(max-width: 1050px){
     .container0{
 		flex-direction: column;
 	}
@@ -271,14 +321,17 @@ header{
 	.contactform .inputbox input[type="submit"]{
 		width:40px;
 	}
-	
+	.content{
+		height:180vh;
+	}
 }
-
+}
 /*CV.html css starts here*/
 *{
 	margin: 0px;
 	padding: 0px;
 }
+/*it holds two section  css*/
 .cv_container{
 	margin-top: 100px;
 	padding: 10px;
@@ -288,16 +341,19 @@ header{
 	margin-left: 5%;
 	display: inline-flex;
 }
+/*Personal information css */
 .personal_info{
 	width:25%;
 	background-color:pink;
 	padding: 10px;
 }
+/*other personal information css */
 .details{
 	width: 70%;
 	background: white;
 	padding: 10px;
 }
+/*backgound image css can be seen */
 .cv_body{
 	background-image: url("images/namo-buddha.jpg");
 	background-repeat:no-repeat;
@@ -306,10 +362,12 @@ header{
     width: 100%;
     background-size: cover;
 }
+/*table css*/
 table, th, td{
 	border:2px solid #000;
 	text-align: left;
 }
+/*cv image css*/
 .personal_info img{
   width: 120px;
   margin-top: 6%;
@@ -333,16 +391,16 @@ table, th, td{
 		width: 100%;
 	}
 }
-/*Protofolio*/
+/*Protofolio css starts*/
  *{
- 	margin: 0px
+ 	margin: 0px;
  	padding:0px;
 }
 .Port1{
     width: 1000px;
 	float: center;
     text-align: center;
-	padding-top: 80px;
+	padding-top: 60px;
 	flex-direction: column;
 }
 .Port1 h1{
@@ -354,6 +412,7 @@ table, th, td{
 	color: crimson;
  	font-size: 35px;
 }
+/*background image css of portfolio*/
 .backg1{
 	background-image: url("images/namo-buddha.jpg");
 	background-size: cover;
@@ -365,20 +424,45 @@ table, th, td{
     overflow : hidden;
 
 }
-.placeholder img{
-	margin-left: 8% ;
+/*Placeholder image css with the help od grid can be seen*/
+.grid-holder{
+	height: 50vh;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	grid-gap:50px;
+	align-items: center;
+	padding-top:25px;
+	padding-right:50px;
+	padding-left:100px;
+	grid-template-rows:250px;
+	margin-top: 30px;
+}
+.placeholder1{
+	box-shadow: 0 0 3px rgba(222, 227, 224); 
+	height: 400px;
+}
+.placeholder1 img{
+	width:100%;
+	display:block;
+	height: 50vh;
+}
+/*placeholder content css */
+.ph-content{
+	padding:15px;
+	opacity:0.8; 
+	height:20vh;
+	text-align:center;
+	background: linear-gradient(rgba(153, 239, 242),rgba(69, 255, 150));
 }
 /*media query of portfolio*/
 @media screen and (max-width:600px){
 	.backg1{
-		background-size: cover;
-	    height: 280vh;
+		background-size: center;
+	    height: 320vh;
 	    position:absolute;
 	}
-	.placeholder img{
-		display: flex;
-		padding-left: 280px;
-		padding-top: 120px;
+	.grid-holder{
+		grid-row-gap: 10px;
 	}
 }
 /*Sitereport starts here*/
@@ -390,30 +474,47 @@ table, th, td{
 }
 /*information of report has been shown in creative way*/
 .Reports{
-	background-color: pink;
+	background-color: #bac1c9;
 	width: 90%;
 	padding: 25px;
 	margin-top: 10%;
 	left: 5%;
 	position: absolute;
-    height: 3000px;
+    height: 6000px;
+    opacity: 0.8;
     margin-right:9%;
     font-size: 18px;
     /*position: relative; */
 }
+.Reports h4{
+	color: ;
+}
 /*It holds background of report*/
 .v_body{
-	background-image: radial-gradient(lightgreen,darkgreen,orange,red,purple,deeppink,blue,#fff,pink);
+	background-image: radial-gradient(#eeaeca,#94bbe9,#eeaeca);
 	background-position: center;
-    position: absolute; 
-    height: 700vh;
+	position: absolute; 
+    height: 900vh;
+    /*opacity: 0.5;*/
     width: 100%;
     background-size: cover;
-    overflow:hidden;
+    overflow: hidden;
 }
 /*some images are inserted related with content*/
+.shot{
+	justify-content: space-around;
+	display: flex;
+}
 .shot img{
 	width: 45%;
 	height: 300px;
-}
-/*Report page css ends here
+	}
+@media screen and (max-width:600px){
+	.Reports{	
+	width: 90%;
+	padding: 25px;
+	margin-top: 30%;
+	left: 5%;
+	position: relative;
+ }
+/*Report page css ends here*/
