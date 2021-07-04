@@ -1,10 +1,11 @@
-index.html starts here*/
+/*Homapage starts here*/
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	text-decoration: none;
 }
+/*Background image of homepage is added*/
 header{
 	background:url("images/namo-buddha.jpg");
 	height:100vh;
@@ -16,7 +17,7 @@ header{
 	padding: 0 70px;
 	margin: 20px;
 }
-/*navbar styling starts...*/
+/*menubar styling starts...*/
 .navbar{
 	position: fixed;
 	width: 100%;
@@ -29,6 +30,7 @@ header{
 	margin-left: 30px;
 	transition: 0.3s ease;
 }
+/*hover for menubar*/
 .navbar .menu li a:hover{
 	background-color: crimson;
 	color: #fff;
@@ -42,6 +44,7 @@ header{
 	color: #000;
 	font-weight: 600;
 }
+/*logo of the page is inserted here*/
 .logo img{ 
 		width: 30px;
 		border-radius: 15px;
@@ -53,6 +56,7 @@ header{
 	align-items: center;
     justify-content: space-between;
 }
+/*hamburger icon is made here*/
 .menu2{
     height: 35px;
 	width: 33px;
@@ -76,6 +80,7 @@ header{
 #cc{
 	transform: translateY(3px);
 }
+/*html page text is inserted  */
 .title{ 
 	position: absolute;
 	top: 50%;
@@ -85,6 +90,10 @@ header{
  .title h2{
  	color: #000;
  	font-size: 60px;
+}
+.title h2:before{
+	content:'Hello!';
+	animation: ani 8s infinite;
 }
 .title h3{
 	color: crimson;
@@ -96,19 +105,65 @@ header{
     font-size:20px;
     color: silver;
 }
+/*1st Animation of text starts here*/
+@keyframes ani{
+	0%{
+	 	font-size: 60px;
+		opacity:1;
+	}
+	25%{
+	 	font-size: 57px;
+		opacity:0;
+	}
+	50%{
+	 	font-size: 60px;
+		opacity:1;
+		
+	}
+	65%{
+	 	font-size: 57px;
+		opacity:0;
+	}
+	80%{
+	 	font-size: 60px;
+		opacity:1;
+		content:'Namaste!';
+	}
+	90%{
+	 	font-size: 57px;
+		opacity:0;
+	}
+	100%{
+	 	font-size: 60px;
+		opacity:1;
+		content:'Hello!';
+		
+	}
+}
+/*2nd animaion of text starts here*/
 @keyframes animate{
 	0%{
-		color: #ededca;
+		color: #e0df79;
 		text-shadow:0 0 20px yellow;
 	}
-
+	25%{
+		color: #78f576 ;
+		text-shadow:0 0 20px #1cf218;
+	}
+	50%{
+		color: #91f1f2;
+		text-shadow:0 0 20px #2de0e3;
+	}
+	75%{
+		color: #f2cb83;
+		text-shadow:0 0 20px #f7a919;
+	}
+	
 	100%{
-		color:#edd0ca;
+		color:#e0917b;
 		text-shadow: 0 0 20px crimson;
 	}
 }
-
-/*Media Query*/
 /*Media Query of index.html for hamburger icon*/
 @media screen and (max-width: 600px) {
   .navbar ul li:not(:first-child) {display: none;}
@@ -122,7 +177,7 @@ header{
     position: absolute;
   }
 }
-/*media query of index.html*/
+/*Media query of whole homepage start here*/
 @media screen and (max-width: 600px) {
   .navbar.responsive ul li {position: relative;}
   .navbar.responsive .menu2 {
@@ -143,12 +198,14 @@ header{
  .hamberger-icon{
 	display: none;
 }
+/*Css and media query of indexpage ends here*/
 
 /*.contact.html css start here*/
 *{ 
 	margin: 0;
 	padding: 0;
 }
+/*background image*/
 .content{
 	background-image: linear-gradient(#fff,pink);
 	background-size: cover;
@@ -156,11 +213,9 @@ header{
 	background-position: center center;
 	object-position: center;
 	background-attachment:fixed;
-	/*width:100%;*/
-	/*position:absolute;*/
 	overflow: hidden;
 }
-.contact. content h2{
+.contact. content h3{
 	font-size: 36px;
 	font-weight: 500;
 	color:#fff;
@@ -173,7 +228,7 @@ header{
 	margin-top: 3px;
 	padding-top: 130px;
 }
-/*Some info about me  was provided*/
+/*Some contact info about me  was provided*/
 .container0 .contactinfo{
 	width: 50%;
 	display: flex;
@@ -198,8 +253,7 @@ header{
     font-weight: 500;
     color: crimson; 
 }
-
- /*Contact form was created*/
+/*Contact form was created*/
 .contactform{
 	width:40%;
 	padding:50px;
@@ -271,16 +325,13 @@ header{
 		height:180vh;
 	}
 }
-	
-
-	
 }
-
 /*CV.html css starts here*/
 *{
 	margin: 0px;
 	padding: 0px;
 }
+/*it holds two section  css*/
 .cv_container{
 	margin-top: 100px;
 	padding: 10px;
@@ -290,16 +341,19 @@ header{
 	margin-left: 5%;
 	display: inline-flex;
 }
+/*Personal information css */
 .personal_info{
 	width:25%;
 	background-color:pink;
 	padding: 10px;
 }
+/*other personal information css */
 .details{
 	width: 70%;
 	background: white;
 	padding: 10px;
 }
+/*backgound image css can be seen */
 .cv_body{
 	background-image: url("images/namo-buddha.jpg");
 	background-repeat:no-repeat;
@@ -308,10 +362,12 @@ header{
     width: 100%;
     background-size: cover;
 }
+/*table css*/
 table, th, td{
 	border:2px solid #000;
 	text-align: left;
 }
+/*cv image css*/
 .personal_info img{
   width: 120px;
   margin-top: 6%;
@@ -335,7 +391,7 @@ table, th, td{
 		width: 100%;
 	}
 }
-/*Protofolio*/
+/*Protofolio css starts*/
  *{
  	margin: 0px;
  	padding:0px;
@@ -356,6 +412,7 @@ table, th, td{
 	color: crimson;
  	font-size: 35px;
 }
+/*background image css of portfolio*/
 .backg1{
 	background-image: url("images/namo-buddha.jpg");
 	background-size: cover;
@@ -367,6 +424,7 @@ table, th, td{
     overflow : hidden;
 
 }
+/*Placeholder image css with the help od grid can be seen*/
 .grid-holder{
 	height: 50vh;
 	display: grid;
@@ -387,9 +445,8 @@ table, th, td{
 	width:100%;
 	display:block;
 	height: 50vh;
-	/*color:blue;*/
-
 }
+/*placeholder content css */
 .ph-content{
 	padding:15px;
 	opacity:0.8; 
@@ -417,23 +474,28 @@ table, th, td{
 }
 /*information of report has been shown in creative way*/
 .Reports{
-	background-color: pink;/*#666*/
+	background-color: #bac1c9;
 	width: 90%;
 	padding: 25px;
 	margin-top: 10%;
 	left: 5%;
 	position: absolute;
     height: 6000px;
+    opacity: 0.8;
     margin-right:9%;
     font-size: 18px;
     /*position: relative; */
 }
+.Reports h4{
+	color: ;
+}
 /*It holds background of report*/
 .v_body{
-	background-image: linear-gradient(orange,red,purple,deeppink,blue,#fff,pink,gold,silver);
+	background-image: radial-gradient(#eeaeca,#94bbe9,#eeaeca);
 	background-position: center;
-    position: absolute; 
+	position: absolute; 
     height: 900vh;
+    /*opacity: 0.5;*/
     width: 100%;
     background-size: cover;
     overflow: hidden;
@@ -446,16 +508,13 @@ table, th, td{
 .shot img{
 	width: 45%;
 	height: 300px;
-}
+	}
 @media screen and (max-width:600px){
-	.Reports{
-	
+	.Reports{	
 	width: 90%;
 	padding: 25px;
 	margin-top: 30%;
 	left: 5%;
 	position: relative;
-   
-   
-}
-/*Report page css ends here
+ }
+/*Report page css ends here*/
