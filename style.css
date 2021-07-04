@@ -479,12 +479,11 @@ table, th, td{
 	padding: 25px;
 	margin-top: 10%;
 	left: 5%;
-	position: absolute;
-    height: 6000px;
+	position: relative;
+    height: 8000px;
     opacity: 0.8;
     margin-right:9%;
     font-size: 18px;
-    /*position: relative; */
 }
 .Reports h4{
 	color: ;
@@ -493,9 +492,8 @@ table, th, td{
 .v_body{
 	background-image: radial-gradient(#eeaeca,#94bbe9,#eeaeca);
 	background-position: center;
-	position: absolute; 
-    height: 900vh;
-    /*opacity: 0.5;*/
+	position: relative; 
+    min-height: 900vh;
     width: 100%;
     background-size: cover;
     overflow: hidden;
@@ -509,12 +507,4 @@ table, th, td{
 	width: 45%;
 	height: 300px;
 	}
-@media screen and (max-width:600px){
-	.Reports{	
-	width: 90%;
-	padding: 25px;
-	margin-top: 30%;
-	left: 5%;
-	position: relative;
- }
 /*Report page css ends here*/
